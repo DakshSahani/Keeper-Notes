@@ -1,0 +1,128 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Montserrat",sans-serif;
+  background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color:#eee;
+
+}
+
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-flow:column nowrap
+}
+main{
+  flex-grow:1;
+}
+
+header{
+  text-align: center;
+  background-color: #f5ba13;
+  padding:10px;
+  margin-bottom:10px;
+  box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
+
+}
+
+header h1{
+  color:#fff;
+  font-family:'McLaren',cursive;
+  font-weight:200;
+}
+
+
+
+.deleting-note{
+  transform: scale(0.2,0.2);
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+
+.note-container{
+  display: flex;
+  flex-flow: row wrap;
+  margin-inline:5vw;
+}
+.note{
+  position: relative;
+  width:240px;
+  height: fit-content;
+  margin:16px;
+  padding:10px;
+
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow:0 2px 5px #ccc;
+}
+
+.wraper{
+  position: relative;
+}
+.wraper input , .wraper textarea{
+  position: absolute;
+  top:0;
+  height:100%;
+  resize:unset;
+  min-height: unset;
+  word-wrap: break-word;
+}
+
+.sizer{
+  word-wrap: break-word;
+  color:blue;
+}
+
+button.save-button, button.cancel-button {
+  background-color: #fff;
+  border: none;
+  color: #f5ba13;
+  margin-inline: 4px;
+  font-size:1rem;
+}
+
+button.save-button:hover, button.cancel-button:hover {
+  color:#ccc;
+}
+
+
+
+.add-button , .delete-button , .edit-button{
+  color:#f5ba13;
+  position:absolute;
+  right:10px;
+  border:none;
+  background-color: white;
+}
+
+.edit-button{
+  top:10px;
+}
+
+.delete-button , .add-button{
+  bottom:10px;
+}
+
+.add-icon:hover , .delete-button:hover , .edit-button:hover{
+  color: #ccc;
+}
+.add-button:active , .delete-button:active{
+  transform: scale(0.95);
+}
+
+
+footer{
+  text-align:center;
+  width:100%;
+  height:2.5rem;
+}
+
+footer p{
+  color:#ccc;
+}

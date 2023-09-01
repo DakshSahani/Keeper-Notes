@@ -1,0 +1,54 @@
+.input-container{
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}
+
+form{
+    position: relative;
+    width:400px;
+    border-radius: 7px;
+    box-shadow:0 2px 5px #ccc;
+    padding:10px;
+    background-color: #fff;
+    color:#ccc;
+}
+
+input{
+    font-weight: 550;
+    font-size:1.1rem;
+}
+
+textarea{
+    min-height: 80px;
+    font-size:1rem;
+}
+
+input ,textarea{
+    display:bolck;
+    width:100%;
+    font-family:"Montserrat",sans-serif;
+    margin-bottom:8px;
+    outline:none;
+    border: none;
+}
+
+.add-button{
+    background-color: white;
+}
+
+.add-icon{
+    background-color: white;
+    font-size: 2.2rem;
+    color:#f5ba13;
+    animation-name: popup;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.61, 1.64);
+    animation-direction: reverse;
+    animation-duration: 0.3s;
+}
+
+@keyframes popup {
+    to{
+        transform:scale(0.2,0.2);
+    }
+}
